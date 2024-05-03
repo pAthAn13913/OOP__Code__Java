@@ -22,14 +22,14 @@ public class Student implements Comparable<Student> {
         @Override
         public int compare(Student o1, Student o2) {
             if (o1.gpa > o2.gpa) return 1;
-            else if (o1.gpa < o2.gpa) return -1;           //nomani sir
+            else if (o1.gpa < o2.gpa) return -1;                   // nomani sir...
             return 0;
         }
     };
 
     public int compareTo(Student s) {
         if (this.id > s.id) return 1;
-        else if (this.id < s.id) return -1;           //romij sir
+        else if (this.id < s.id) return -1;                        // romij sir ....  interface implement ....implements Comparable<Student>
         return 0;
     }
 }
@@ -49,31 +49,35 @@ class Student_ArrayList {
         s_Array.add(s4);
         s_Array.add(s5);
 
-        System.out.println("1st ");
+        System.out.println("Without sort ");
         for (int i = 0; i < s_Array.size(); i++) {
             s_Array.get(i).showInfo();
         }
-
-        System.out.println("2nd ");
-        s_Array.sort(Student.sortMethod);
+        
+        s_Array.sort(Student.sortMethod);                        //nomani call
+        System.out.println("Sort Nomani_sir method ");
         for (int i = 0; i < s_Array.size(); i++) {
             s_Array.get(i).showInfo();
         }
-
-        System.out.println("3rd ");
-        Collections.sort(s_Array);
+        
+        Collections.sort(s_Array);                            //romij call 
+        System.out.println("Sort Romij_sir method ");
         for (int i = 0; i < s_Array.size(); i++) {
             s_Array.get(i).showInfo();
         }
-
+        
         s_Array.sort(new Comparator<Student>(){
             
             public int compare(Student o1, Student o2) {
             if (o1.gpa > o2.gpa) return 1;
-            else if (o1.gpa < o2.gpa) return -1;           //Fahim sir
+            else if (o1.gpa < o2.gpa) return -1;              //Fahim sir ...using Anonymous class.....
             return 0;
         }
         });
+        System.out.println("Sort Fahim_sir method ");
+        for (int i = 0; i < s_Array.size(); i++) {
+            s_Array.get(i).showInfo();
+        }
     }
 
 }
