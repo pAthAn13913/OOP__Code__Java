@@ -65,6 +65,15 @@ class Student_ArrayList {
         for (int i = 0; i < s_Array.size(); i++) {
             s_Array.get(i).showInfo();
         }
+
+        s_Array.sort(new Comparator<Student>(){
+            
+            public int compare(Student o1, Student o2) {
+            if (o1.gpa > o2.gpa) return 1;
+            else if (o1.gpa < o2.gpa) return -1;           //Fahim sir
+            return 0;
+        }
+        });
     }
 
 }
