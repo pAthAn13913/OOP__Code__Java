@@ -31,8 +31,7 @@ public class Array {
 
     public static void showList(ArrayList<Point> ap) {
         for (int i = 0; i < ap.size(); i++) {
-            System.out.println(ap.get(i).x +
-                    " " + ap.get(i).y);
+            System.out.println(ap.get(i).x +" " + ap.get(i).y);
         }
     }
 
