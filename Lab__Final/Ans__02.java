@@ -10,12 +10,12 @@ public class Vowel {
             Scanner sc = new Scanner(new File("a.txt"));
 
             String line1 = sc.nextLine();
-            line1.toLowerCase();
             String result = "";
 
             for (int i = 0; i < line1.length(); i++) {
                 char c = line1.charAt(i);
-                if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+                 if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
+                    c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U' ) {
 
                     result += c;
                 }
