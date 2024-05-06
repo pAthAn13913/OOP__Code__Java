@@ -23,7 +23,8 @@ public class Student implements Comparable<Student> {
         public int compare(Student o1, Student o2) {
             if (o1.gpa > o2.gpa) return 1;
             else if (o1.gpa < o2.gpa) return -1;                   // nomani sir...
-            return 0;
+            return 0;                                                              
+
         }
     };
 
@@ -61,7 +62,7 @@ class Student_ArrayList {
         }
         
         Collections.sort(s_Array);                            //romij call 
-        System.out.println("Sort Romij_sir method ");
+        System.out.println("Sort Romij_sir method ");                      // for Integer......Collection.sort(s_Array,Collection.reversOrder()); ...just call it
         for (int i = 0; i < s_Array.size(); i++) {
             s_Array.get(i).showInfo();
         }
@@ -71,7 +72,8 @@ class Student_ArrayList {
             public int compare(Student o1, Student o2) {
             if (o1.gpa > o2.gpa) return 1;
             else if (o1.gpa < o2.gpa) return -1;              //Fahim sir ...using Anonymous class.....
-            return 0;
+            return 0;                                                
+                                                                 // return o1.name.compareTo(o2.name);  for string ..only this statement
         }
         });
         System.out.println("Sort Fahim_sir method ");
