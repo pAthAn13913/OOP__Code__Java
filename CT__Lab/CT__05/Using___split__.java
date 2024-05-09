@@ -16,8 +16,8 @@ public class Using_split {
             String line1 = sc.nextLine();
             String line2 = sc.nextLine();
 
-            String line1_Parts[] = line1.split(",");
-            String line2_Parts[] = line2.split(",");
+            String line1_Parts[] = line1.split(" ");           // return string array....and we want what kind of part....this kind puting in (...)
+            String line2_Parts[] = line2.split(" ");
 
 
             for (i = 0; i < line1_Parts.length - 1; i++) {
