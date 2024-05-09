@@ -28,7 +28,7 @@ public class Remove {
         }
         for (i = 0; i < ch.length - 1; i++) {
             for (j = i; j < ch.length - 1; ) {
-                if (ch[j] == '_' && ch[j + 1] == '_') {
+                if ((ch[j] == '_' && ch[j + 1] == '_') || ch[0]=='_' ) {
                     for (k = j; k < ch.length - 1; k++) {
                         ch[k] = ch[k + 1];
                     }
