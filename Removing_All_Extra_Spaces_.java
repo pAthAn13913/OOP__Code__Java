@@ -26,7 +26,6 @@ public class Remove {
         for (i = 0; i < line.length(); i++) {
             ch[i] = line.charAt(i);
         }
-        String s = "";
         for (i = 0; i < ch.length - 1; i++) {
             for (j = i; j < ch.length - 1; j++) {
                 if (ch[j] == '_' && ch[j + 1] == '_') {
