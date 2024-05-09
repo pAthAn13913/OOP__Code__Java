@@ -27,13 +27,13 @@ public class Remove {
             ch[i] = line.charAt(i);
         }
         for (i = 0; i < ch.length - 1; i++) {
-            for (j = i; j < ch.length - 1; j++) {
+            for (j = i; j < ch.length - 1; ) {
                 if (ch[j] == '_' && ch[j + 1] == '_') {
                     for (k = j; k < ch.length - 1; k++) {
                         ch[k] = ch[k + 1];
                     }
                     len--;
-                }
+                } else j++;
             }
         }
         for (i = 0; i <len; i++) {
